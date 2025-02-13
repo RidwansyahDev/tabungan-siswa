@@ -261,7 +261,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="flex-grow-1">
-                                                    <span class="fw-semibold d-block"><?= $_SESSION['nama']?></span>
+                                                    <span
+                                                        class="fw-semibold d-block"><?= $_SESSION['nama_petugas']?></span>
                                                     <small class="text-muted"><?= $_SESSION['role']?></small>
                                                 </div>
                                             </div>

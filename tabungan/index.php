@@ -44,7 +44,7 @@ $result =$conn->query($query);
                                 <select class="form-select js-example-basic-single" name="id_siswa" id="siswa">
                                     <option selected>-- Pilih Siswa --</option>
                                     <?php while ($row = $result->fetch_assoc()) :?>
-                                    <option value="<?=$row['id_siswa'] ?>"><?= $row['id_siswa']?> - <?=$row['nama'] ?>
+                                    <option value="<?=$row['id_siswa'] ?>"><?= $row['nis']?> - <?=$row['nama'] ?>
                                     </option>
                                     <?php endwhile;?>
                                 </select>
