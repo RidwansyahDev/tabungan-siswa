@@ -38,7 +38,6 @@ $result =$conn->query($query);
                 <div class="card-body">
                     <form action="<?=BASE_URL?>/tabungan/view_tabungan.php" method="POST">
                         <div class="row mb-3">
-
                             <label class="col-sm-2 col-form-label" for="siswa">Pilih Siswa</label>
                             <div class="col-sm-10">
                                 <select class="form-select js-example-basic-single" name="id_siswa" id="siswa">

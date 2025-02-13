@@ -55,7 +55,7 @@ if (isset($_POST['update'])) {
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
-                <a href="<?php echo BASE_URL ?>/admin/home/index.php">Home</a>
+                <a href="<?php echo BASE_URL ?>/index.php">Home</a>
             </li>
             <li class="breadcrumb-item active">Data Kelas</li>
         </ol>

@@ -35,7 +35,7 @@ $query = mysqli_query($conn, "SELECT * FROM rekening_tabungan JOIN siswa ON reke
                 <div class="table-responsive p-3">
                     <a href="<?=BASE_URL?>/rekening/add.php" class="btn btn-sm btn-success mb-2">
                         <i class='bx bx-plus'></i> Tambah</a>
-                    <table  class="table table-striped mb-0">
+                    <table class="table table-striped mb-0">
                         <thead>
                             <tr>
                                 <th>No</th>
