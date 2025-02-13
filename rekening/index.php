@@ -7,7 +7,7 @@ if (!$_SESSION['login']) {
     header('Location: '.BASE_URL.'/auth/login.php');
 }
 
-$judul = "Data Kelas";
+$judul = "Data Tabungan";
 include "../templates/header.php";
 // Ambil Data dari tabel kelas
 $query = mysqli_query($conn, "SELECT * FROM rekening_tabungan JOIN siswa ON rekening_tabungan.id_siswa=siswa.id_siswa");
@@ -57,7 +57,7 @@ $query = mysqli_query($conn, "SELECT * FROM rekening_tabungan JOIN siswa ON reke
                                 <td><?=$no++?></td>
                                 <td><?= $row['id_rekening']?></td>
                                 <td><?= $row['nama']?></td>
-                                <td><?= $row['saldo']?></td>
+                                <td><?= rupiah($row['saldo'])?></td>
                                 <td><?= $row['status']?></td>
                                 <td>
                                     <a href="update.php?id=<?= $row['id']?>" class="btn btn-sm btn-primary me-1"

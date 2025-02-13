@@ -80,7 +80,7 @@ $query = mysqli_query($conn, "SELECT * FROM transaksi_tabungan JOIN siswa ON sis
                                 <td><?= $row['id_rekening']?></td>
                                 <td><?= $row['tanggal_transaksi']?></td>
                                 <td><?= $row['jenis_transaksi']?></td>
-                                <td><?= $row['jumlah']?></td>
+                                <td><?= rupiah($row['jumlah'])?></td>
                                 <td><?= $row['username']?></td>
                                 <td><?= $row['keterangan']?></td>
                                 <td>
