@@ -16,7 +16,7 @@ if (isset($_POST['login'])) {
                 // set session
                 $_SESSION['login'] = true;
                 $_SESSION['id']=$row['id'];
-                $_SESSION['nama_petugas'] = $row['nama_petugas'];
+                $_SESSION['nama'] = $row['nama'];
                 $_SESSION['username']= $row['username'];
                 $_SESSION['role'] = $row['role'];
                 // redirect ke halaman index

@@ -13,7 +13,7 @@ include "../templates/header.php";
 $id_petugas = $_SESSION['id'];
 
 // ambil data siswa dari database untuk data select
-$query = "SELECT id_siswa,nis, nama FROM siswa";
+$query = "SELECT id_siswa, nama FROM siswa";
 $result =$conn->query($query);
 
 if (isset($_POST['add'])) {
@@ -72,7 +72,7 @@ if (isset($_POST['add'])) {
                                 <select class="form-select js-example-basic-single" name="id_siswa" id="siswa">
                                     <option selected>-- Pilih Siswa --</option>
                                     <?php while ($row = $result->fetch_assoc()) :?>
-                                    <option value="<?=$row['id_siswa'] ?>"><?= $row['nis']?> - <?=$row['nama'] ?>
+                                    <option value="<?=$row['id_siswa'] ?>"><?= $row['id_siswa']?> - <?=$row['nama'] ?>
                                     </option>
                                     <?php endwhile;?>
                                 </select>

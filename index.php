@@ -68,7 +68,7 @@ $data_saldo = mysqli_fetch_assoc($query_saldo);
                             <div class="card-title">
                                 <h4 class="mb-0">
                                     <span class="badge bg-label-info ">
-                                        <?= isset($data_setor['jumlah_setoran']) ? rupiah($data_setor['jumlah_setoran']) : 'Rp. 0,00'; ?>
+                                        <?= isset($data_setor['jumlah_setoran']) ? rupiah($data_setor['jumlah_setoran']) : 'Data tidak tersedia'; ?>
                                     </span>
                                 </h4>
                             </div>
@@ -92,7 +92,7 @@ $data_saldo = mysqli_fetch_assoc($query_saldo);
                             <div class="card-title">
                                 <h4 class="mb-0">
                                     <span class="badge bg-label-danger ">
-                                        <?= isset($data_tarik['jumlah_tarik']) ? rupiah($data_tarik['jumlah_tarik']) : 'Data tidak tersedia'; ?>
+                                        <?= isset($data_saldo['jumlah_saldo']) ? rupiah($data_saldo['jumlah_saldo']) : 'Data tidak tersedia'; ?>
                                     </span>
                                 </h4>
                             </div>
@@ -117,7 +117,7 @@ $data_saldo = mysqli_fetch_assoc($query_saldo);
                             <div class="card-title">
                                 <h4 class="mb-0">
                                     <span class="badge bg-label-success ">
-                                        <?= isset($data_saldo['jumlah_saldo']) ? rupiah($data_saldo['jumlah_saldo']) : 'Data tidak tersedia'; ?>
+                                        <?= isset($data_setor['jumlah_setoran']) ? rupiah($data_setor['jumlah_setoran']) : 'Data tidak tersedia'; ?>
                                     </span>
                                 </h4>
                             </div>
