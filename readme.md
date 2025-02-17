@@ -1,6 +1,6 @@
 #Source code Aplikasi Tabungan Siswa dengan menggunakan Bahasa Pemograman PHP
 Teknologi :
-- PHP 7.*
+- PHP 8.*
 - Bootstrap 5
 - MySQL/MariaDB
 - JQuery
